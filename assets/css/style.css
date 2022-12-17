@@ -1,0 +1,14 @@
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+
+.nav-item {
+    margin:0px 15px;
+}
+
+.customNav {
+    position: fixed;
+    width: 100%;
+    color: white !important;
+}
