@@ -1,3 +1,9 @@
+/* Global styles  */
+/* body {
+    color: white;
+} */
+
+/* Navigation bar/Header section */
 .navbar-nav {
     margin-left: auto;
     margin-right: 0 !important;
@@ -10,5 +16,53 @@
 .customNav {
     position: fixed;
     width: 100%;
-    color: white !important;
+    z-index: 15;
+
+    
 }
+
+.navbar {
+    background-color: black !important;
+    
+}
+
+.navbar .navbar-brand, .navbar .collapse .navbar-nav a, .navbar .collapse .navbar-nav a .active, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.disabled {
+    color: white;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+}
+
+/* .nav-item:focus, .nav-item:hover {
+    color:red;
+    background:yellow;
+} */
+
+/* Hero section-jumbotron */
+.jumbotron {
+    background:rgba(0,0,0,.70) url(../images/programmer-screen-1-header.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+}
+
+.jumbocopy {
+    color:white;
+    text-align: center;
+}
+
+/* #jumbo-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2.5rem;
+    margin:auto;
+    border: solid white 0.4rem;
+    margin-top: 20px;
+    margin-bottom: auto;
+    } */
+
+    
+
+
+
