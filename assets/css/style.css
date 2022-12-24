@@ -78,6 +78,20 @@
     margin:0 auto;
 }
 
+/* About-me section */
+.about-me {
+    width: 90vw;
+    margin:0 auto;
+    background-color: #EBEBEB;
+    border-radius: 1.5rem;
+}
+
+.about-TextContainer{
+    padding: 1rem 2rem;
+}
+
+
+
 /* Portfolio section */
 .sectionHeading {
     text-align: center;
