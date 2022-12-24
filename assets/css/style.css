@@ -96,6 +96,14 @@
     padding: 1rem 2rem;
 }
 
+.about-social-link {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    
+    
+}
+
 /* Portfolio section */
 .sectionHeading {
     text-align: center;
