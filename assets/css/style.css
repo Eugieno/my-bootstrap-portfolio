@@ -4,6 +4,12 @@
 } */
 
 /* Navigation bar/Header section */
+.social-link {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    }
+
 .navbar-nav {
     margin-left: auto;
     margin-right: 0 !important;
@@ -89,8 +95,6 @@
 .about-TextContainer{
     padding: 1rem 2rem;
 }
-
-
 
 /* Portfolio section */
 .sectionHeading {
