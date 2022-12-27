@@ -113,5 +113,55 @@
     margin-bottom: 1.5rem;
    }
 
+   /* Footer section */
+   footer {
+    background-color: #EBEBEB;
+    padding-top: 15px;
+   }
+
+#my-form-button:hover {
+    box-shadow: 3px 3px 3px 1px;
+}
+
+#footer_nav li a {
+    text-decoration: none;
+    color: black;
+    }
+
+    #footer_nav li a:hover {
+        background-color: black;
+        color: white;
+    }
+
+
+#footer_nav {
+    list-style-type:none;
+    padding-left: 0px;
+}
+
+
+
+
+   #copy-right {
+    text-align: center;
+   }
+
+
+   /* media queries */
+   @media only screen and (max-width:767px) {
+    #footer-nav-container h4,#footer_nav li,#my-form h4, #my-form p,#contact-form h4 {
+        text-align: center;
+    }
+  
+    #my-form{
+        margin: 0 auto;
+        
+    }
+   
+ #contact-form ul{
+    margin-left:11rem;
+ }
+    }
+   
 
 
