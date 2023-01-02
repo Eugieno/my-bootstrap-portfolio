@@ -23,8 +23,6 @@
     position: fixed;
     width: 100%;
     z-index: 15;
-
-    
 }
 
 .navbar {
@@ -40,10 +38,9 @@
     color: white;
 } */
 
-/* .nav-item:focus, .nav-item:hover {
-    color:red;
-    background:yellow;
-} */
+.nav-item:focus, .nav-item:hover {
+    background:blue;
+}
 
 /* Hero section-jumbotron */
 .jumbotron {
@@ -65,10 +62,6 @@
     margin:auto;
     
     }
-
-
-
-
 
 #jumbo-imgContainer {
     margin-top:1rem;
