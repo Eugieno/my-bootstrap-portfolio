@@ -24,7 +24,15 @@ As a student web developer, I want to optimise (minimise) the development time f
  ## Outcome 
  The time taken to build each section of the portfoilo webpage was 30-40% less compared to the build time for my previous project (without the use of a framework). 
 
- The following image shows the appearance of each sections of the webpage after implementing each issues. 
+ Also, the webpage performance on mobile for the new (improved) portfolio webpage has increased by approx. 19%. See analytics below for comparison;
+
+ Previous portolio page:
+![Previous portfolio](./assets/images/Page-performance-page-1.png)
+
+ New improved portfolio webpage:
+ ![Bootsrap portfolio](/assets/images/Page-performance-page-2.png)
+
+ The following image shows the appearance of each sections of the webpage after implementing ALL issues. 
 
  1. Main Navigation and Hero section
  ![Navigation/Hero](./assets/images/Main%20navigation%20and%20Hero%20section.png)
