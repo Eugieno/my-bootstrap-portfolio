@@ -37,4 +37,4 @@ As a student web developer, I want to optimise (minimise) the development time f
 
  Here is a full snapshot of the final webpage:![Final page](./assets/images/Full%20bootstrap%20webpage.png)
 
- Here is a link to the live webpage [Live webpage]()
+ Here is a link to the live webpage [Live webpage](https://eugieno.github.io/my-bootstrap-portfolio/)
