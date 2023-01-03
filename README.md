@@ -9,10 +9,10 @@ As a web developer, I want to optimise (minimise) the development time for my Pe
  ## How was the problem solved
  The problem was solved by applying relevant components from boostrap 4 framework and customising them using CSS overrides. 
 
- The webpage has 4 major sections - Header, About me section, Work (or portfolio) and Footer. This sections are coded sequentially as described by the issues raised;
+ The webpage has 4 major sections namely Header, About me, Work (or portfolio) and Footer. These sections are coded sequentially according to the below issues;
 
  1. Coding the main navigation and hero section 
- 2. Coding the About me section with contact 
+ 2. Coding the About me section (with contact/skills) 
  3. Coding the Work section 
  4. Coding the footer section 
 
@@ -20,7 +20,7 @@ As a web developer, I want to optimise (minimise) the development time for my Pe
  ## Outcome 
  The time taken to build each section of the webpage was reduced by 30-40%. 
 
- The following image shows the apperance of each sections of the webpage after implementing all each issues. 
+ The following image shows the apperance of each sections of the webpage after implementing each issues. 
 
  1. Main Navigation and Hero section
  ![Navigation/Hero](./assets/images/Main%20navigation%20and%20Hero%20section.png)
@@ -31,6 +31,6 @@ As a web developer, I want to optimise (minimise) the development time for my Pe
  4. Footer section 
  ![Footer](./assets/images/Footer%20section.png)
 
- The full snapshot of the webpage can be found here:![Final page](./assets/images/Full%20bootstrap%20webpage.png)
+ Here is a full snapshot of the final webpage:![Final page](./assets/images/Full%20bootstrap%20webpage.png)
 
- Here is a link to the live webpage[Live webpage]()
+ Here is a link to the live webpage [Live webpage]()
