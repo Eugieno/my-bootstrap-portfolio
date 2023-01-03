@@ -1,13 +1,13 @@
 # my-bootstrap-portfolio
 
 ## What problem was solved
-As a web developer, I want to optimise (minimise) the development time for my Personal portfolio webpage without making compromises to responsive design and accessibility. 
+As a student web developer, I want to optimise (minimise) the development time for my Personal portfolio webpage without making compromises to responsive design and accessibility features. 
 
 ## Why is this important
  It is important beacause I want to be able to build, test and deploy web applications with a pace and precision that meets the taste of future clients and customers and yet creates the best user experience for end-users of these web applications. 
 
  ## How was the problem solved
- The problem was solved by applying relevant components from boostrap 4 framework and customising them using CSS overrides. 
+ The problem was solved by applying relevant components from boostrap 4 framework and customising them using CSS overrides in the proccess of re-creating the webpage. 
 
  The webpage has 4 major sections namely Header, About me, Work (or portfolio) and Footer. These sections are coded sequentially according to the below issues;
 
@@ -15,6 +15,10 @@ As a web developer, I want to optimise (minimise) the development time for my Pe
  2. Coding the About me section (with contact/skills) 
  3. Coding the Work section 
  4. Coding the footer section 
+
+ In addition, images in the website were optimised to allow for faster loading - leading to better UX by implementing the following; 
+ 1. Compression of image files
+ 2. Lazy loading
 
 
  ## Outcome 

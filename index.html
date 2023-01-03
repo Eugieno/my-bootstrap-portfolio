@@ -80,8 +80,6 @@
                         </div>
                     </div>
                 </div>
-
-            
             </div>
         </div>
     </div>
@@ -146,7 +144,7 @@
           <!-- Card 1 -->
           <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
             <div class="card">
-              <img class="lazy" data-src="image-to-lazy-load.jpg" src="./assets/images/accessibility_pic.jpg" class="card-img-top" alt="A picture of a hand holding a web accessibility device">
+              <img class="lazy" data-src="./assets/images/accessibility_pic.jpg" src="#" class="card-img-top" alt="A picture of a hand holding a web accessibility device">
               <div class="card-body">
                 <h5 class="card-title">Accessibility upgrade</h5>
                 <p class="card-text">Project involving optimising Horiseon website to improve its accessibility to ALL users.</p>
@@ -158,7 +156,7 @@
           <!-- Card 2 -->
           <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
             <div class="card">
-              <img class="lazy" data-src="image-to-lazy-load.jpg" src="./assets/images/dummy-8.jpg" class="card-img-top" alt="A placeholder picture showing a group of tall buildings in a city">
+              <img class="lazy" data-src="./assets/images/dummy-8.jpg" src="#" class="card-img-top" alt="A placeholder picture showing a group of tall buildings in a city">
               <div class="card-body">
                 <h5 class="card-title">First Portfoilio page</h5>
                 <p class="card-text">A personal portfolio webpage built with html and CSS only and adapted for different screen sizes</p>
@@ -170,7 +168,7 @@
           <!-- Card 3 -->
           <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
             <div class="card">
-              <img class="lazy" data-src="image-to-lazy-load.jpg" src="./assets/images/programmer-screen-1-header.jpg" class="card-img-top" alt="A picture showing a programmer's laptop screen with codes, and the laptop placed on a desk">
+              <img class="lazy" data-src="./assets/images/programmer-screen-1-header.jpg" src="#" class="card-img-top" alt="A picture showing a programmer's laptop screen with codes, and the laptop placed on a desk">
               <div class="card-body">
                 <h5 class="card-title">Bootstrap portfolio page</h5>
                 <p class="card-text">Re-creating my personal portfolio page using bootstrap framework and CSS overrides</p>
@@ -185,7 +183,7 @@
             <!-- Card 1 -->
             <div class="cardContainer col-lg-4 col-md-4 col-sm-12" id="portfolioRow-2">
               <div class="card">
-                <img class="lazy" data-src="image-to-lazy-load.jpg" src="./assets/images/programmer-keyboard.jpg" class="card-img-top" alt="A placeholder image">
+                <img class="lazy" data-src="./assets/images/programmer-keyboard.jpg" src="#" class="card-img-top" alt="A placeholder image">
                 <div class="card-body">
                   <h5 class="card-title">Dummy 2</h5>
                   <p class="card-text">Keep calm! More projects will be uploaded soon!</p>
@@ -197,7 +195,7 @@
             <!-- Card 2 -->
             <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
               <div class="card">
-                <img class="lazy" data-src="image-to-lazy-load.jpg" src="./assets/images/landing-page.jpg" class="card-img-top" alt="A placeholder image">
+                <img class="lazy" data-src="./assets/images/landing-page.jpg" src="#" class="card-img-top" alt="A placeholder image">
                 <div class="card-body">
                   <h5 class="card-title">Dummy 3</h5>
                   <p class="card-text">Keep calm! More projects will be uploaded soon!</p>
@@ -209,7 +207,7 @@
             <!-- Card 3 -->
             <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
               <div class="card">
-                <img class="lazy" data-src="image-to-lazy-load.jpg" src="./assets/images/dummy-5.jpg" class="card-img-top" alt="A placeholder image">
+                <img class="lazy" data-src="./assets/images/dummy-5.jpg" src="#" class="card-img-top" alt="A placeholder image">
                 <div class="card-body">
                   <h5 class="card-title">Dummy 4</h5>
                   <p class="card-text">Keep calm! More projects will be uploaded soon!</p>
@@ -219,7 +217,6 @@
             </div>          
           </div>
         </div>
-
 
     <!-- Skill section -->
   
@@ -267,7 +264,6 @@
                         </style>
                     </ul>
                 </div>
-                
             </div>
                 <!-- footer navigation -->
                 <div class="cardContainer col-lg-6 col-md-6 col-sm-12" id="footer-nav-container">
@@ -324,9 +320,60 @@
         form.addEventListener("submit", handleSubmit)
     </script>
     <!-- Script for Lazy loading image -->
-    <script src="yall.min.js"></script>
+    <!-- <script src="yall.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", yall);
+    </script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var lazyloadImages;    
+
+          if ("IntersectionObserver" in window) {
+            lazyloadImages = document.querySelectorAll(".lazy");
+            var imageObserver = new IntersectionObserver(function(entries, observer) {
+              entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                  var image = entry.target;
+                  image.src = image.dataset.src;
+                  image.classList.remove("lazy");
+                  imageObserver.unobserve(image);
+                }
+              });
+            });
+
+            lazyloadImages.forEach(function(image) {
+              imageObserver.observe(image);
+            });
+          } else {  
+            var lazyloadThrottleTimeout;
+            lazyloadImages = document.querySelectorAll(".lazy");
+    
+            function lazyload () {
+              if(lazyloadThrottleTimeout) {
+                clearTimeout(lazyloadThrottleTimeout);
+              }    
+
+              lazyloadThrottleTimeout = setTimeout(function() {
+                var scrollTop = window.pageYOffset;
+                lazyloadImages.forEach(function(img) {
+                    if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                      img.src = img.dataset.src;
+                      img.classList.remove('lazy');
+                    }
+                });
+                if(lazyloadImages.length == 0) { 
+                  document.removeEventListener("scroll", lazyload);
+                  window.removeEventListener("resize", lazyload);
+                  window.removeEventListener("orientationChange", lazyload);
+                }
+              }, 20);
+            }
+
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+          }
+        })
     </script>
 </body>
 </html>
