@@ -155,12 +155,8 @@ footer {
         margin: 0 auto;
         
     }
-   
-    #contact-form ul{
-        margin-bottom:0rem;
-    }
-    
-    #TEST {
+       
+    #footer-social-link {
         display: flex;
         justify-content: center;
         align-items: center;
