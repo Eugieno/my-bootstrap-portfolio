@@ -18,9 +18,9 @@ As a web developer, I want to optimise (minimise) the development time for my Pe
 
 
  ## Outcome 
- The time taken to build each section of the webpage was reduced by 30-40%. 
+ The time taken to build each section of the portfoilo webpage was 30-40% less compared to the build time for my previous project (without the use of a framework). 
 
- The following image shows the apperance of each sections of the webpage after implementing each issues. 
+ The following image shows the appearance of each sections of the webpage after implementing each issues. 
 
  1. Main Navigation and Hero section
  ![Navigation/Hero](./assets/images/Main%20navigation%20and%20Hero%20section.png)
