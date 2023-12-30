@@ -22,7 +22,7 @@
 }
 
 .navbar {
-    background-color: black !important;
+    background-color: #111821 !important;
     
 }
 
@@ -93,14 +93,17 @@
    }
 
 .btn-primary {
-    background-color: black;
+    background-color:#111821;
     color:white;
     border-color: white;
    }
 
 /* Footer section */
 footer {
-    background-color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #111821;
     padding-top: 15px;
    }
 
@@ -127,24 +130,15 @@ footer {
 
 #copy-right {
    text-align: center;
+   color: white;
 }
 
 
 /* media queries */
-@media only screen and (max-width:767px) {
-    #footer-nav-container h4,#footer_nav li,#my-form h4, #my-form p,#contact-form h4 {
-        text-align: center;
-    }
-  
-    #my-form{
-        margin: 0 auto;
-        
-    }
-       
-    #footer-social-link {
+@media only screen and (max-width:767px) {       
+    footer {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
     }
 }
    
