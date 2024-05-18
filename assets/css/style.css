@@ -142,9 +142,14 @@ footer {
     }
 
     #jumbo-img {
-        margin-top:10%;
+        margin-top:15%;
+        height: 90%;
     }
 
+    .jumbocopy {
+        margin-top: 5%;
+    }
+    
 }
    
 
